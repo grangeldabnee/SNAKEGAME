@@ -1,0 +1,45 @@
+* {
+    font-family: 'Games', sans-serif;
+}
+#board, boardInfo{
+    max-width: 500px;
+}
+#board{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+}
+#start, .boardInfo{
+    font-size: 30px;
+}
+#gameOver{
+    display: none;
+}
+.boardInfo{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#start{
+    background-color: yellow;
+    color: red;
+    border-radius: 20px;
+}
+#score{
+    color:red;
+    border-radius:20px;
+}
+#scoreBoard{
+    display: inline-flex;
+}
+.square{
+    aspect-ratio:1;
+}
+.emptySquare{
+    background-color: #456990;
+}
+.snakeSquare{
+    background-color: aquamarine;
+}
+.foodSquare{
+    background-color: red;
+}
